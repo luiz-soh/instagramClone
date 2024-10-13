@@ -3,7 +3,9 @@
 enum Env {
   supabaseUrl('SUPABASE_URL'),
   powerSyncUrl('POWERSYNC_URL'),
-  supabaseAnonKey('SUPABASE_ANON_KEY');
+  supabaseAnonKey('SUPABASE_ANON_KEY'),
+  iosClientId('IOS_CLIENT_ID'),
+  webClientId('WEB_CLIENT_ID');
 
   const Env(this.value);
 

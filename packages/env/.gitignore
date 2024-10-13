@@ -43,8 +43,6 @@ app.*.map.json
 # Test related
 coverage
 
-.env.dev
-.env.prod
+.env.*
 
-lib/src/env_dev.g.dart
-lib/src/env_prod.g.dart
+lib/src/env_*.g.dart

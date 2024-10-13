@@ -26,17 +26,32 @@ class AppFlavor extends AppEnv {
         Env.supabaseUrl => switch (flavor) {
             Flavor.development => EnvDev.supabaseUrl,
             Flavor.production => EnvProd.supabaseUrl,
-            Flavor.staging => EnvProd.supabaseUrl,
+            Flavor.staging => EnvStaging.supabaseUrl,
           },
         Env.powerSyncUrl => switch (flavor) {
             Flavor.development => EnvDev.powerSyncUrl,
             Flavor.production => EnvProd.powerSyncUrl,
-            Flavor.staging => EnvProd.powerSyncUrl,
+            Flavor.staging => EnvStaging.powerSyncUrl,
           },
         Env.supabaseAnonKey => switch (flavor) {
             Flavor.development => EnvDev.supabaseAnonKey,
             Flavor.production => EnvProd.supabaseAnonKey,
-            Flavor.staging => EnvProd.supabaseAnonKey,
+            Flavor.staging => EnvStaging.supabaseAnonKey,
           },
+        // Env.fcmServerKey => switch (flavor) {
+        //     Flavor.development => EnvDev.fcmServerKey,
+        //     Flavor.production => EnvProd.fcmServerKey,
+        //     Flavor.staging => EnvProd.fcmServerKey,
+        //   },
+        Env.iosClientId => switch (flavor) {
+            Flavor.development => EnvDev.iosClientId,
+            Flavor.production => EnvProd.iosClientId,
+            Flavor.staging => EnvStaging.iosClientId,
+          },
+        Env.webClientId => switch (flavor) {
+            Flavor.development => EnvDev.webClientId,
+            Flavor.production => EnvProd.webClientId,
+            Flavor.staging => EnvStaging.webClientId,
+          }
       };
 }

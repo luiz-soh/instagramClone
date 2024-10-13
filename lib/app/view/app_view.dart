@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/app/login/view/login_page.dart';
 import 'package:instagram_clone/l10n/l10n.dart';
 
 class AppView extends StatelessWidget {
@@ -15,11 +16,7 @@ class AppView extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const SafeArea(
-        child: Scaffold(
-          body: Text('Olaa'),
-        ),
-      ),
+      home: const LoginPage(),
     );
   }
 }

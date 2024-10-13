@@ -19,4 +19,12 @@ abstract class EnvDev {
   /// PowerSync Url
   @EnviedField(varName: 'POWERSYNC_URL', obfuscate: true)
   static String powerSyncUrl = _EnvDev.powerSyncUrl;
+
+    /// Ios Client Id
+  @EnviedField(varName: 'IOS_CLIENT_ID', obfuscate: true)
+  static String iosClientId = _EnvDev.iosClientId;
+
+    /// Web Client Id
+  @EnviedField(varName: 'WEB_CLIENT_ID', obfuscate: true)
+  static String webClientId = _EnvDev.webClientId;
 }
